@@ -1,0 +1,177 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lora-v32-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/crimson-text-v19-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v26-latin-regular.woff2') format('woff2');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  font-weight: 400;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.season {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/pexels-ollie-craig-19755886.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spring {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lora', serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.summer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.autumn {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.winter {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.season__container {
+  width: 1200px;
+}
+
+.header__btns {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__btn {
+  color: #fff;
+  border: 2px solid white;
+  padding: 6px 12px;
+  font-size: 20px;
+  border-radius: 15px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.header__btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.season__title {
+  margin-bottom: 12px;
+  font-size: 70px;
+}
+
+.season__text {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
